@@ -1,0 +1,18 @@
+# Archivos y carpetas de caché de Python
+__pycache__/
+*.pyc
+
+# Carpetas de entornos virtuales (muy importante, suelen ser pesadas)
+venv/
+.venv/
+env/
+.env/
+.env
+
+# La carpeta pesada que quieres ignorar (CAMBIA ESTE NOMBRE)
+# Por ejemplo, si se llama 'dataset_grande', pon 'dataset_grande/'
+seecoder_model/
+
+# Otros archivos comunes a ignorar
+.DS_Store
+*.log

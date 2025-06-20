@@ -1,0 +1,12 @@
+{
+    "image_root": "images/references",
+    "prompt_postfix": "",
+    "neg_prompt": ", monochrome, lowres, bad anatomy, worst quality, low quality",
+    "image_exps": 
+    [
+        {
+            "image_path": "herba_mala.jpg",
+            "exp_name": "var_herba"
+        }
+    ]
+}
