@@ -20,7 +20,7 @@ Go to the Official PyTorch 'Get Started' Page.
 Use the interactive tool to select your OS, package manager (pip), and compute platform (CPU or your specific CUDA version).
 
 
-[📄 Seecoder checkpoint]([(https://huggingface.co/shi-labs/prompt-free-diffusion/tree/main/pretrained/pfd/seecoder)]) | 
+[📄 Seecoder checkpoint](https://huggingface.co/shi-labs/prompt-free-diffusion/tree/main/pretrained/pfd/seecoder) | 
 
 ---
 
