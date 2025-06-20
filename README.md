@@ -26,32 +26,20 @@ Use the interactive tool to select your OS, package manager (pip), and compute p
 
 ## Installation
 
-Follow these steps to set up a local development environment.
-
-### 1. Clone the Repository
-
-First, clone this repository to your local machine:
-
-```bash
-git clone [https://github.com/your-username/your-repository.git](https://github.com/your-username/your-repository.git)
-cd your-repository
-```
-
 ```bash
 # EXAMPLE ONLY: For CUDA 12.1. Do NOT copy this command.
 # Generate your own command from the official PyTorch website.
 pip3 install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 
 ```
-4. Install Project Dependencies
+Install Project Dependencies
 Once PyTorch is correctly installed, install the remaining dependencies from the requirements.txt file.
 
 ```bash
-
 pip install -r requirements.txt
 ```
 
-5. Install xformers (Optional)
+Install xformers (Optional)
 For significantly improved performance and memory efficiency on compatible GPUs, install xformers.
 
 Consult the official xformers GitHub [repository](https://github.com/facebookresearch/xformers) for advanced installation methods, such as building from source.
