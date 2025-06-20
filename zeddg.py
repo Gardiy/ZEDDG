@@ -43,9 +43,13 @@ class ZEDDG():
                               VARIATION_CFG["invert_steps"])
 
     def latte(self, image_path, principal = False):
+        print("load")
         im, craw = load_512(image_path)  #load image
+        print("encode")
         seecoder_latents = self.inversion.seecoder.encode(craw) #encode
+        print("seecoder_latents")
         self.inversion.init_seecoder(seecoder_latents) #load for inversion
+        print("ddim")
         x_ts =  self.inversion.ddim_inversion(im, dtype=self.dtype) #invert, x_ts,[50 latent]
         if principal:
             return x_ts, seecoder_latents

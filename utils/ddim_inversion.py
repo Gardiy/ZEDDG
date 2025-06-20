@@ -154,6 +154,7 @@ class SeeCoder:
         self.SEE_encoder = self.SEE_encoder.to(device)
         self.SEE_encoder.eval()
     
+    @torch.no_grad()
     def encode(self, image):
         return self.SEE_encoder(image.movedim(-1,1).to(device)).cpu()[:,:77,:]
 
