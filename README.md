@@ -54,4 +54,4 @@ pip install -r requirements.txt
 5. Install xformers (Optional)
 For significantly improved performance and memory efficiency on compatible GPUs, install xformers.
 
-Consult the official xformers GitHub [repository]([https://github.com/facebookresearch/xformers]) for advanced installation methods, such as building from source.
+Consult the official xformers GitHub [repository](https://github.com/facebookresearch/xformers) for advanced installation methods, such as building from source.
