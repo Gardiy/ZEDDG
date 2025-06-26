@@ -12,12 +12,12 @@ except ImportError:
 from icecream import ic
 from torchvision import transforms
 
-from utils.sd_pipeline_img import ZEDDGStableDiffusionPipeline
-from utils.attention_forward import new_forward
-from utils.ddim_inversion import Inversion, load_512, save_images
-from utils.multi_guide import block_scramble
+from .utils.sd_pipeline_img import ZEDDGStableDiffusionPipeline
+from .utils.attention_forward import new_forward
+from .utils.ddim_inversion import Inversion, load_512, save_images
+from .utils.multi_guide import block_scramble
 
-from configs.diff_config import VARIATION_CFG
+from .configs.diff_config import VARIATION_CFG
 from typing import Any, Callable, Dict, List, Optional, Union
 
 class ZEDDG():
@@ -43,13 +43,9 @@ class ZEDDG():
                               VARIATION_CFG["invert_steps"])
 
     def latte(self, image_path, principal = False):
-        print("load")
         im, craw = load_512(image_path)  #load image
-        print("encode")
         seecoder_latents = self.inversion.seecoder.encode(craw) #encode
-        print("seecoder_latents")
         self.inversion.init_seecoder(seecoder_latents) #load for inversion
-        print("ddim")
         x_ts =  self.inversion.ddim_inversion(im, dtype=self.dtype) #invert, x_ts,[50 latent]
         if principal:
             return x_ts, seecoder_latents

@@ -2,7 +2,7 @@ import torch.nn.functional as F
 import torch
 
 def latentes_explicitas(image_tensors, block_sizes, p_scrambles): # te, [0,2,3] p_scr[0,0.5]
-    b = image_tensors.shape[0]
+    b = len(block_sizes)
     #print(b)
     main_tensor = block_scramble_v2(image_tensors[0], block_sizes[0], p_scrambles[0])
     for i in range(1,b):

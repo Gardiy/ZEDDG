@@ -13,8 +13,8 @@ import cv2
 scaler = torch.amp.GradScaler('cuda') # torch.cuda.amp deprecated
 device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
 
-from utils.seecoder import SemanticExtractionEncoder, QueryTransformer, Decoder
-from utils.swin import SwinTransformer
+from .seecoder import SemanticExtractionEncoder, QueryTransformer, Decoder
+from .swin import SwinTransformer
 from safetensors.torch import load_file
 
 def save_images(images, num_rows=1, offset_ratio=0.02, name="im.png", upper_note=None, lower_note=None):

@@ -6,7 +6,7 @@ import torch
 
 
 from diffusers.utils import logging
-from utils.pipeline_seecoder_diffusion import DiffusionSeecoderPipeline
+from .pipeline_seecoder_diffusion import DiffusionSeecoderPipeline
 from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
 
 from icecream import ic

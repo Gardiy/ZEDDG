@@ -14,5 +14,5 @@ VARIATION_CFG = {
     "invert_steps": 50,
     "guidance_scale": 5,
     "t_early": 600,
-    "path_seecode": "seecoder_model/seecoder-pa-v1-0.safetensors"
+    "path_seecode": "/home/aed/Área de Trabalho/JoseR/ZEDDG/seecoder_model/seecoder-pa-v1-0.safetensors"
 }

@@ -16,3 +16,5 @@ seecoder_model/
 # Otros archivos comunes a ignorar
 .DS_Store
 *.log
+images/
+ipadapter/
